@@ -15,6 +15,7 @@ import { KontaktComponent } from './Pages/kontakt/kontakt.component';
 import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
 import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
 import { OplataComponent } from './Pages/oplata/oplata.component';
+import { DostavkaComponent } from './Pages/dostavka/dostavka.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { OplataComponent } from './Pages/oplata/oplata.component';
     SpasiboComponent,
     AdresDostavkiComponent,
     OplataComponent,
+    DostavkaComponent,
   ],
   imports: [
     BrowserModule,
