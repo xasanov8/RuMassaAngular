@@ -13,6 +13,7 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { ErrorComponent } from './Pages/error/error.component';
 import { KontaktComponent } from './Pages/kontakt/kontakt.component';
 import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
+import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
     ErrorComponent,
     KontaktComponent,
     SpasiboComponent,
+    AdresDostavkiComponent,
   ],
   imports: [
     BrowserModule,
