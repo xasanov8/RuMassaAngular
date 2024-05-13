@@ -14,6 +14,7 @@ import { ErrorComponent } from './Pages/error/error.component';
 import { KontaktComponent } from './Pages/kontakt/kontakt.component';
 import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
 import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
+import { OplataComponent } from './Pages/oplata/oplata.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.co
     KontaktComponent,
     SpasiboComponent,
     AdresDostavkiComponent,
+    OplataComponent,
   ],
   imports: [
     BrowserModule,
