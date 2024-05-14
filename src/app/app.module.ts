@@ -17,6 +17,7 @@ import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.co
 import { OplataComponent } from './Pages/oplata/oplata.component';
 import { DostavkaComponent } from './Pages/dostavka/dostavka.component';
 import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.component';
+import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.c
     OplataComponent,
     DostavkaComponent,
     HomeInThreeComponent,
+    HomeInFourComponent,
   ],
   imports: [
     BrowserModule,
