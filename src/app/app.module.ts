@@ -18,6 +18,8 @@ import { OplataComponent } from './Pages/oplata/oplata.component';
 import { DostavkaComponent } from './Pages/dostavka/dostavka.component';
 import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.component';
 import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.component';
+import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.component';
+import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.comp
     DostavkaComponent,
     HomeInThreeComponent,
     HomeInFourComponent,
+    HomeInFiveComponent,
+    HomeInEightComponent,
   ],
   imports: [
     BrowserModule,
