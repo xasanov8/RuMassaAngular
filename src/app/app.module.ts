@@ -20,6 +20,8 @@ import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.comp
 import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.component';
 import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
 import { Router } from '@angular/router';
+import { HomeInNineComponent } from './Pages/home/home-in-nine/home-in-nine.component';
+import { HomeInSevenComponent } from './Pages/home/home-in-seven/home-in-seven.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { Router } from '@angular/router';
     HomeInFourComponent,
     HomeInFiveComponent,
     HomeInEightComponent,
+    HomeInNineComponent,
+    HomeInSevenComponent,
   ],
   imports: [
     BrowserModule,
