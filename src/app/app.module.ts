@@ -10,7 +10,6 @@ import { HomeInTwoComponent } from './Pages/home/home-in-two/home-in-two.compone
 import { HomeInOneComponent } from './Pages/home/home-in-one/home-in-one.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
-import { ErrorComponent } from './Pages/error/error.component';
 import { KontaktComponent } from './Pages/kontakt/kontakt.component';
 import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
 import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
@@ -20,6 +19,7 @@ import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.c
 import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.component';
 import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.component';
 import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
+import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,6 @@ import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.c
     HomeInOneComponent,
     LoginComponent,
     RegisterComponent,
-    ErrorComponent,
     KontaktComponent,
     SpasiboComponent,
     AdresDostavkiComponent,
@@ -44,7 +43,7 @@ import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     provideClientHydration()
