@@ -19,7 +19,7 @@ import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.c
 import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.component';
 import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.component';
 import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
-import { Router } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,8 @@ import { Router } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterLink,
+    RouterOutlet
   ],
   providers: [
     provideClientHydration()
