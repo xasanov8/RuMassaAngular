@@ -27,6 +27,8 @@ import { SkidkiComponent } from './Pages/skidki/skidki.component';
 import { SkidkiSidebarComponent } from './Pages/skidki/skidki-sidebar/skidki-sidebar.component';
 import { OIVComponent } from './Pages/o-i-v/o-i-v.component';
 import { KOZComponent } from './Pages/k-o-z/k-o-z.component';
+import { NovostiInComponent } from './Pages/novosti-in/novosti-in.component';
+import { NovostiInOneComponent } from './Pages/novosti-in/novosti-in-one/novosti-in-one.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,8 @@ import { KOZComponent } from './Pages/k-o-z/k-o-z.component';
     SkidkiSidebarComponent,
     OIVComponent,
     KOZComponent,
+    NovostiInComponent,
+    NovostiInOneComponent,
   ],
   imports: [
     BrowserModule,
