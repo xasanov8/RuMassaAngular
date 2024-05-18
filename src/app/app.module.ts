@@ -26,6 +26,7 @@ import { HomeInSixComponent } from './Pages/home/home-in-six/home-in-six.compone
 import { SkidkiComponent } from './Pages/skidki/skidki.component';
 import { SkidkiSidebarComponent } from './Pages/skidki/skidki-sidebar/skidki-sidebar.component';
 import { OIVComponent } from './Pages/o-i-v/o-i-v.component';
+import { KOZComponent } from './Pages/k-o-z/k-o-z.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { OIVComponent } from './Pages/o-i-v/o-i-v.component';
     SkidkiComponent,
     SkidkiSidebarComponent,
     OIVComponent,
+    KOZComponent,
   ],
   imports: [
     BrowserModule,
