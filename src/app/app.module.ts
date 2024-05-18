@@ -22,6 +22,7 @@ import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.comp
 import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
 import { HomeInNineComponent } from './Pages/home/home-in-nine/home-in-nine.component';
 import { HomeInSevenComponent } from './Pages/home/home-in-seven/home-in-seven.component';
+import { HomeInSixComponent } from './Pages/home/home-in-six/home-in-six.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { HomeInSevenComponent } from './Pages/home/home-in-seven/home-in-seven.c
     HomeInEightComponent,
     HomeInNineComponent,
     HomeInSevenComponent,
+    HomeInSixComponent,
   ],
   imports: [
     BrowserModule,
