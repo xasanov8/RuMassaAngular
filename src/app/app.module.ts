@@ -23,6 +23,8 @@ import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.c
 import { HomeInNineComponent } from './Pages/home/home-in-nine/home-in-nine.component';
 import { HomeInSevenComponent } from './Pages/home/home-in-seven/home-in-seven.component';
 import { HomeInSixComponent } from './Pages/home/home-in-six/home-in-six.component';
+import { SkidkiComponent } from './Pages/skidki/skidki.component';
+import { SkidkiSidebarComponent } from './Pages/skidki/skidki-sidebar/skidki-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { HomeInSixComponent } from './Pages/home/home-in-six/home-in-six.compone
     HomeInNineComponent,
     HomeInSevenComponent,
     HomeInSixComponent,
+    SkidkiComponent,
+    SkidkiSidebarComponent,
   ],
   imports: [
     BrowserModule,
