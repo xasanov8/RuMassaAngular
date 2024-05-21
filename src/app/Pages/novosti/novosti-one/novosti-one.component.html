@@ -6,8 +6,8 @@
             <div class="boxes">
                 <div *ngFor="let card of cards" class="card">
                     <div class="img">
-                      <img [src]="card.imgSrc" alt="">
-                      <p>{{ card.category }}</p>
+                      <img [src]="card.cardPhoto" alt="">
+                      <p>Без рубрики</p>
                     </div>
                     <h1 style="width: 100%;font-size: 18px;font-weight: 600;padding: 10px;">{{ card.title }}</h1>
                     <div class="one-p">
@@ -18,12 +18,12 @@
                         {{ card.date }}
                       </p>
                       <p>
-                        Автор: <img [src]="card.authorImg" alt="" style="margin-left: 5px;">
-                        <span style="padding-left: 5px;">{{ card.authorName }}</span>
+                        Автор: <img [src]="card.user.photoUrl" alt="" style="margin-left: 5px;">
+                        <span style="padding-left: 5px;">{{ card.user.name }}</span>
                       </p>
                     </div>
                     <p style="padding: 10px;border-top: 1px solid black;width: 100%;font-size: 14px;padding-top: 15px;padding-bottom: 15px;">
-                      {{ card.content }}
+                      {{ card.description }}
                     </p>
                     <div class="card-bottom" style="padding: 10px;width: 100%;border-top: 1px solid black;">
                       <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" style="padding: 3px;background-color: #F7F7F7;margin-bottom: 10px;">

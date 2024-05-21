@@ -8,11 +8,13 @@ import { SpasiboComponent } from './Pages/spasibo/spasibo.component';
 import { OplataComponent } from './Pages/oplata/oplata.component';
 import { DostavkaComponent } from './Pages/dostavka/dostavka.component';
 import { AdresDostavkiComponent } from './Pages/adres-dostavki/adres-dostavki.component';
+import { NovostiComponent } from './Pages/novosti/novosti.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'news', component: NovostiComponent},
   {path: 'contact', component: KontaktComponent},
   {path: 'thanks', component: SpasiboComponent},
   {path: 'oplata', component: OplataComponent},

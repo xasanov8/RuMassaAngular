@@ -10,8 +10,7 @@ import { CardModel } from '../../../interfaces/card-model';
 export class NovostiOneComponent implements OnInit {
   
   constructor(private novostiService: NovostiService) { }
-  news !: CardModel[];
-  cards: any[] = [];
+  cards !: CardModel[];
   pageIndex: number = 1;
   size: number = 12;
 
@@ -34,21 +33,26 @@ export class NovostiOneComponent implements OnInit {
   getAll(pageIndex: number, size: number): void {
     this.novostiService.getAllNews(pageIndex, size).subscribe(
       (data: CardModel[]) => {
-        this.news = data;
-        this.updateCards();
+        this.cards = data;
+        console.log(this.cards);
+        // this.updateCards();
+      },
+      error => {
+        console.error('Error fetching news:', error);
       }
     );
   }
   
-  updateCards(): void {
-    this.cards = this.news.map(newsItem => ({
-      imgSrc: newsItem.cardPhoto,
-      category: 'Без рубрики',
-      title: newsItem.title,
-      date: newsItem.date,
-      authorImg: newsItem.user?.PhotoUrl || 'default-avatar.png',
-      authorName: newsItem.user?.Name || 'Unknown Author',
-      content: newsItem.description
-    }));
-  }
+  // updateCards(): void {
+  //   this.cards = this.news.map(newsItem => ({
+  //     imgSrc: newsItem.cardPhoto,
+  //     category: 'Без рубрики',
+  //     title: newsItem.title,
+  //     date: newsItem.date,
+  //     authorImg: newsItem.user?.photoUrl || 'default-avatar.png',
+  //     authorName: newsItem.user?.name || 'Unknown Author',
+  //     content: newsItem.description
+  //   }));
+  //   console.log(this.cards);
+  // }
 }

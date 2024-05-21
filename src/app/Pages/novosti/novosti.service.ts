@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from '../../../environments/environment';
@@ -13,8 +13,7 @@ export class NovostiService {
 
   constructor(private http : HttpClient) { }
 
-  getAllNews(pageIndex: number, size: number) : Observable<CardModel[]>
-  {
-    return this.http.get<CardModel[]>(`${this.api}/GetAll?pageIndex=${pageIndex}&size=${size}`)
+  getAllNews(pageIndex: number, size: number) : Observable<CardModel[]>{
+    return this.http.get<CardModel[]>(`${this.api}/GetAll?pageIndex=${pageIndex}&size=${size}`);
   }
 }

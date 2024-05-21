@@ -19,7 +19,6 @@ import { HomeInThreeComponent } from './Pages/home/home-in-three/home-in-three.c
 import { HomeInFourComponent } from './Pages/home/home-in-four/home-in-four.component';
 import { HomeInFiveComponent } from './Pages/home/home-in-five/home-in-five.component';
 import { HomeInEightComponent } from './Pages/home/home-in-eight/home-in-eight.component';
-import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { HomeInNineComponent } from './Pages/home/home-in-nine/home-in-nine.component';
 import { HomeInSevenComponent } from './Pages/home/home-in-seven/home-in-seven.component';
 import { HomeInSixComponent } from './Pages/home/home-in-six/home-in-six.component';
@@ -33,6 +32,9 @@ import { NovostiComponent } from './Pages/novosti/novosti.component';
 import { NovostiOneComponent } from './Pages/novosti/novosti-one/novosti-one.component';
 import { OtzifComponent } from './Pages/otzif/otzif.component';
 import { OtzifOneComponent } from './Pages/otzif/otzif-one/otzif-one.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterLink, RouterOutlet } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -71,10 +73,11 @@ import { OtzifOneComponent } from './Pages/otzif/otzif-one/otzif-one.component';
     BrowserModule,
     AppRoutingModule,
     RouterLink,
-    RouterOutlet
+    RouterOutlet,
+    HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
   ],
   bootstrap: [AppComponent]
 })
