@@ -34,25 +34,10 @@ export class NovostiOneComponent implements OnInit {
     this.novostiService.getAllNews(pageIndex, size).subscribe(
       (data: CardModel[]) => {
         this.cards = data;
-        console.log(this.cards);
-        // this.updateCards();
       },
       error => {
         console.error('Error fetching news:', error);
       }
     );
   }
-  
-  // updateCards(): void {
-  //   this.cards = this.news.map(newsItem => ({
-  //     imgSrc: newsItem.cardPhoto,
-  //     category: 'Без рубрики',
-  //     title: newsItem.title,
-  //     date: newsItem.date,
-  //     authorImg: newsItem.user?.photoUrl || 'default-avatar.png',
-  //     authorName: newsItem.user?.name || 'Unknown Author',
-  //     content: newsItem.description
-  //   }));
-  //   console.log(this.cards);
-  // }
 }

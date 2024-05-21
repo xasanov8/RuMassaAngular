@@ -1,7 +1,7 @@
 export interface CardModel {
-
+    
     title: string,
-    cardPhoto: string,
+    cardPhotoPath: string,
     date: string,
     description: string,
     user: any,
