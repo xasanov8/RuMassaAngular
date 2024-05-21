@@ -31,8 +31,8 @@ import { NovostiInComponent } from './Pages/novosti-in/novosti-in.component';
 import { NovostiInOneComponent } from './Pages/novosti-in/novosti-in-one/novosti-in-one.component';
 import { NovostiComponent } from './Pages/novosti/novosti.component';
 import { NovostiOneComponent } from './Pages/novosti/novosti-one/novosti-one.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { OtzifComponent } from './Pages/otzif/otzif.component';
+import { OtzifOneComponent } from './Pages/otzif/otzif-one/otzif-one.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +64,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     NovostiInOneComponent,
     NovostiComponent,
     NovostiOneComponent,
-    HttpClientModule
+    OtzifComponent,
+    OtzifOneComponent,
   ],
   imports: [
     BrowserModule,

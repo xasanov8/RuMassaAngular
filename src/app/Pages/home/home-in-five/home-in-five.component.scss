@@ -111,6 +111,7 @@ body {
 .carousel :where(.card) {
   display: flex;
 }
+
 .carousel .card {
   scroll-snap-align: start;
   list-style: none;
